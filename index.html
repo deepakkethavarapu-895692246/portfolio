@@ -14,8 +14,12 @@
         .section-title { border-left: 5px solid var(--primary-blue); padding-left: 15px; margin-bottom: 40px; }
         .card { background-color: var(--card-bg); border: 1px solid #334155; color: white; transition: all 0.3s ease; height: 100%; }
         .card:hover { transform: translateY(-5px); border-color: var(--primary-blue); }
+        .card a { color: var(--primary-blue); text-decoration: none; }
         .skill-badge { background: #334155; color: var(--primary-blue); border: 1px solid var(--primary-blue); margin: 3px; display: inline-block; padding: 5px 12px; border-radius: 20px; font-size: 0.85rem; }
         .cert-card { background: #0f172a; border-left: 3px solid #10b981; padding: 15px; margin-bottom: 15px; }
+        .job { background-color: var(--card-bg); border: 1px solid #334155; border-left: 4px solid var(--primary-blue); border-radius: 6px; padding: 20px 24px; margin-bottom: 20px; }
+        .job ul { margin-bottom: 0; padding-left: 1.2rem; color: #cbd5e1; }
+        .job li { margin-bottom: 6px; }
         .footer { padding: 60px 0; background: #020617; }
     </style>
 </head>
@@ -31,6 +35,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
@@ -42,7 +47,7 @@
     <header class="hero">
         <div class="container text-center">
             <h1 class="display-3 fw-bold mb-3">Deepak Kethavarapu</h1>
-            <p class="lead mb-4 text-info">MS in Data Science Candidate @ University of Central Oklahoma</p>
+            <p class="lead mb-4 text-info">Data Analyst | Python · SQL · Power BI · Tableau · Generative AI</p>
             <div class="d-flex justify-content-center gap-3">
                 <a href="mailto:deepakkethavarapu2024@gmail.com" class="btn btn-primary px-4"><i class="fas fa-envelope me-2"></i>Email Me</a>
                 <a href="https://github.com/deepakkethavarapu-895692246" target="_blank" class="btn btn-outline-light px-4"><i class="fab fa-github me-2"></i>GitHub</a>
@@ -55,59 +60,120 @@
             <div class="col-lg-7">
                 <h2 class="section-title">Professional Summary</h2>
                 <p class="lead text-light-50">
-                    Motivated Master's student in Data Science with hands-on experience in Machine Learning, AI, and Robotics.
-                    Skilled in Python, Java, and developing intelligent systems for autonomous robotics, AI chatbots, and secure encryption.
+                    Data analyst with nearly 2 years of experience compiling, validating, analysing and reporting large datasets from multiple sources.
+                    I build ETL pipelines and data-quality checks in Python and SQL, run statistical analysis, and turn results into Power BI and Tableau dashboards for decision-makers.
+                </p>
+                <p class="text-secondary">
+                    MS in Data Science from the University of Central Oklahoma (May 2026). Currently a Software Engineer Intern working on generative AI and RAG applications.
                 </p>
             </div>
             <div id="skills" class="col-lg-5">
                 <h2 class="section-title">Technical Skills</h2>
                 <div class="mb-3">
-                    <h6 class="text-info">Programming & Tools</h6>
-                    <span class="skill-badge">Python</span> <span class="skill-badge">Java</span>
-                    <span class="skill-badge">SQL</span> <span class="skill-badge">Pandas</span>
-                    <span class="skill-badge">NumPy</span> <span class="skill-badge">Scikit-learn</span>
-                    <span class="skill-badge">OpenAI APIs</span> <span class="skill-badge">Git</span>
+                    <h6 class="text-info">Programming &amp; Analysis</h6>
+                    <span class="skill-badge">Python</span> <span class="skill-badge">SQL</span>
+                    <span class="skill-badge">Pandas</span> <span class="skill-badge">NumPy</span>
+                    <span class="skill-badge">Scikit-learn</span> <span class="skill-badge">Hypothesis Testing</span>
+                    <span class="skill-badge">Regression</span> <span class="skill-badge">EDA</span>
+                </div>
+                <div class="mb-3">
+                    <h6 class="text-info">Data Management &amp; Visualization</h6>
+                    <span class="skill-badge">ETL Pipelines</span> <span class="skill-badge">Data Validation</span>
+                    <span class="skill-badge">Power BI</span> <span class="skill-badge">Tableau</span>
+                    <span class="skill-badge">Streamlit</span> <span class="skill-badge">Excel</span>
                 </div>
                 <div>
-                    <h6 class="text-info">Web & Robotics</h6>
-                    <span class="skill-badge">HTML</span> <span class="skill-badge">React</span>
-                    <span class="skill-badge">Flask</span> <span class="skill-badge">Tailwind CSS</span>
-                    <span class="skill-badge">LEGO EV3</span> <span class="skill-badge">AES Encryption</span>
+                    <h6 class="text-info">Tools &amp; Generative AI</h6>
+                    <span class="skill-badge">Git</span> <span class="skill-badge">AWS</span>
+                    <span class="skill-badge">Flask</span> <span class="skill-badge">REST APIs</span>
+                    <span class="skill-badge">LangChain</span> <span class="skill-badge">RAG</span>
+                    <span class="skill-badge">Vector Databases</span>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="experience" class="container py-5">
+        <h2 class="section-title">Experience</h2>
+
+        <div class="job">
+            <h5 class="text-info mb-1">Software Engineer Intern I (Generative AI)</h5>
+            <p class="mb-1">Code Logic Info Tech Inc. · Remote (Aurora, CO)</p>
+            <small class="text-secondary d-block mb-3">Aug 2026 – Present</small>
+            <ul>
+                <li>Collect, clean and prepare datasets for training, testing and evaluating generative AI applications.</li>
+                <li>Build and test retrieval-augmented generation (RAG) features using documents, databases, embeddings and vector search.</li>
+                <li>Test and evaluate model outputs for accuracy and consistency, and refine prompts to improve results.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <h5 class="text-info mb-1">Physics Laboratory Instructor (Graduate Assistant)</h5>
+            <p class="mb-1">University of Central Oklahoma · Edmond, OK</p>
+            <small class="text-secondary d-block mb-3">Jul 2025 – May 2026</small>
+            <ul>
+                <li>Instructed 150+ undergraduate students in physics laboratory sections over one academic year.</li>
+                <li>Guided students through experimental data collection, measurement, uncertainty analysis and presenting results in graphs and tables.</li>
+                <li>Reviewed and graded lab reports for accuracy of data, calculations and conclusions.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <h5 class="text-info mb-1">Data Analyst</h5>
+            <p class="mb-1">Innominds Software · Hyderabad, India</p>
+            <small class="text-secondary d-block mb-3">Aug 2022 – Apr 2024</small>
+            <ul>
+                <li>Analysed clinical datasets for a 12-hospital client in Python and SQL; reporting models identified readmission risk factors and helped cut preventable readmissions by 18%.</li>
+                <li>Built automated pipelines processing 50K+ daily records, with validation, cleaning and transformation steps.</li>
+                <li>Developed Power BI dashboards tracking bed occupancy, treatment outcomes and medication compliance across 12 departments.</li>
+                <li>Automated weekly data-quality audit reports in Python, cutting manual reporting time by 60%.</li>
+            </ul>
         </div>
     </section>
 
     <section id="projects" class="container py-5">
         <h2 class="section-title">Featured Projects</h2>
         <div class="row g-4">
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-3">
                 <div class="card">
                     <div class="card-body">
-                        <div class="text-info mb-2"><i class="fas fa-robot fa-2x"></i></div>
-                        <h5 class="card-title">Autonomous Number Writing Robot</h5>
-                        <p class="card-text small text-secondary">Developed LEGO EV3 robot in Java to autonomously write digits 0-9 with high precision using multi-threaded motion control.</p>
-                        <span class="badge bg-dark text-info">Java</span> <span class="badge bg-dark text-info">LEGO EV3</span>
+                        <div class="text-info mb-2"><i class="fas fa-chart-line fa-2x"></i></div>
+                        <h5 class="card-title">Supply Chain Analytics Dashboard</h5>
+                        <p class="card-text small text-secondary">ETL pipelines in Python and SQL on 5K+ records, exploratory analysis of inventory bottlenecks, and demand forecasting shown in live Tableau and Streamlit dashboards.</p>
+                        <span class="badge bg-dark text-info">Python</span> <span class="badge bg-dark text-info">SQL</span> <span class="badge bg-dark text-info">Tableau</span>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text-info mb-2"><i class="fas fa-bed fa-2x"></i></div>
+                        <h5 class="card-title">Sleep Health &amp; Lifestyle Analysis</h5>
+                        <p class="card-text small text-secondary">Analysed stress, activity, heart rate and sleep quality across 400+ records; built a regression model to predict sleep duration.</p>
+                        <span class="badge bg-dark text-info">Pandas</span> <span class="badge bg-dark text-info">Scikit-learn</span> <span class="badge bg-dark text-info">Seaborn</span>
+                        <p class="small mt-2 mb-0"><a href="https://github.com/deepakkethavarapu-895692246/sleep-health-analysis" target="_blank"><i class="fab fa-github me-1"></i>View code</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text-info mb-2"><i class="fas fa-brain fa-2x"></i></div>
+                        <h5 class="card-title">EEG Brain Signal Classification</h5>
+                        <p class="card-text small text-secondary">Processed 64-channel EEG time-series from 500 trials, extracted spectral features and trained a Random Forest classifier of cognitive states.</p>
+                        <span class="badge bg-dark text-info">MNE-Python</span> <span class="badge bg-dark text-info">Scikit-learn</span>
+                        <p class="small mt-2 mb-0"><a href="https://github.com/deepakkethavarapu-895692246/eeg-brain-signal-analysis" target="_blank"><i class="fab fa-github me-1"></i>View code</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
                 <div class="card">
                     <div class="card-body">
                         <div class="text-info mb-2"><i class="fas fa-comments fa-2x"></i></div>
-                        <h5 class="card-title">SyllaBot: Intelligent Chatbot</h5>
-                        <p class="card-text small text-secondary">AI-powered web chatbot built with React and OpenAI APIs. Reduced response time by 50% for 100+ users.</p>
-                        <span class="badge bg-dark text-info">React</span> <span class="badge bg-dark text-info">Flask</span> <span class="badge bg-dark text-info">OpenAI</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="text-info mb-2"><i class="fas fa-user-shield fa-2x"></i></div>
-                        <h5 class="card-title">Image Encryption (AES)</h5>
-                        <p class="card-text small text-secondary">Implemented secure image encryption/decryption in Python with dynamic key generation ensuring lossless decryption.</p>
-                        <span class="badge bg-dark text-info">Python</span> <span class="badge bg-dark text-info">AES</span> <span class="badge bg-dark text-info">Security</span>
+                        <h5 class="card-title">SyllaBot: AI Syllabus Chatbot</h5>
+                        <p class="card-text small text-secondary">RAG-based chatbot using the OpenAI API and semantic search over document embeddings; cut response time by 50%.</p>
+                        <span class="badge bg-dark text-info">Flask</span> <span class="badge bg-dark text-info">LangChain</span> <span class="badge bg-dark text-info">OpenAI</span>
+                        <p class="small mt-2 mb-0"><a href="https://github.com/deepakkethavarapu-895692246/syllabot-ai-chatbot" target="_blank"><i class="fab fa-github me-1"></i>View code</a></p>
                     </div>
                 </div>
             </div>
@@ -121,23 +187,27 @@
                 <div class="mb-4">
                     <h5 class="text-info">MS in Data Science</h5>
                     <p class="mb-0">University of Central Oklahoma</p>
-                    <small class="text-secondary">Expected May 2026 | Edmond, OK</small>
+                    <small class="text-secondary">May 2026 | Edmond, OK</small>
                 </div>
                 <div class="mb-4">
-                    <h5 class="text-info">B.Tech in Computer Science</h5>
-                    <p class="mb-0">Gokaraju Rangaraju Inst. of Engineering</p>
-                    <small class="text-secondary">June 2020 - June 2024 | CGPA: 8.25/10</small>
+                    <h5 class="text-info">B.Tech in Computer Science and Engineering</h5>
+                    <p class="mb-0">Gokaraju Rangaraju Institute of Engineering and Technology (GRIET)</p>
+                    <small class="text-secondary">June 2020 - June 2024 | Hyderabad, India | CGPA: 8.25/10</small>
                 </div>
             </div>
             <div class="col-md-6">
                 <h2 class="section-title">Certifications</h2>
                 <div class="cert-card">
+                    <strong>HackerRank</strong><br>
+                    <small>SQL (Advanced), 2026</small>
+                </div>
+                <div class="cert-card">
                     <strong>AWS Academy Graduate</strong><br>
-                    <small>Machine Learning Foundations & Cloud Foundations</small>
+                    <small>Machine Learning Foundations &amp; Cloud Foundations, 2025</small>
                 </div>
                 <div class="cert-card">
                     <strong>NPTEL</strong><br>
-                    <small>Data Science for Engineers & Data Analytics with Python</small>
+                    <small>Data Science for Engineers &amp; Data Analytics with Python, 2024</small>
                 </div>
             </div>
         </div>
@@ -146,9 +216,8 @@
     <footer id="contact" class="footer">
         <div class="container text-center">
             <h2 class="mb-4">Let's Connect</h2>
-            <p>Ready to apply my analytical and problem-solving expertise to your team.</p>
+            <p>Open to Data Analyst, Business Analyst and Data Science roles.</p>
             <div class="fs-4 mb-4">
-                <a href="https://linkedin.com/in/deepak-kethavarapu-895692246" class="text-white me-4"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/deepakkethavarapu-895692246" class="text-white me-4"><i class="fab fa-github"></i></a>
                 <a href="mailto:deepakkethavarapu2024@gmail.com" class="text-white"><i class="fas fa-envelope"></i></a>
             </div>
